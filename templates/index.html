@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <section class="hero_section">
+      <img src="{{ url_for('static', filename='images/Search.png') }}" class= "search">
+        <img src = "{{ url_for('static', filename='images/searchhh.png') }}" class = "searchhh" />
+        <img src = "{{ url_for('static', filename='images/gradient.png') }}" class="gradient" />
+        <img src = "{{ url_for('static', filename='images/premierlogo.png') }}" class="cornerlogo" />
+        <img src = "{{ url_for('static', filename='images/pattern3.png') }}" class="pattern" />
+        <img src = "{{ url_for('static', filename='images/01.png') }}" class="logos"/>
+        <div class="text_container">
+            <h1 class="maintext">Football Live Auction Sim</h1>
+            <ul class="list">
+                <li>Free to Use</li>
+                <li>2025 Players Included</li>
+                <li>Fun to Play</li>
+            </ul>
+        </div>
+        <div class="buttoncontainer">
+            <a href="/click" class="button">
+              <h4 class="buttontext">Scout Players</h4>
+            </a>
+          </div>
+          
+          <div class="buttoncontainer2">
+            <a href="#sim" class="button">
+              <h4 class="buttontext">Try AI Sim</h4>
+            </a>
+          </div>
+          
+          <div class="buttoncontainer3">
+            <a href="#auction" class="button">
+              <h4 class="buttontext">Start Bidding</h4>
+            </a>
+          </div>
+        
+
+
+    
+</body>
+</html>
