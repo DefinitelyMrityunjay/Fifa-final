@@ -1,19 +1,16 @@
-from flask import Flask,redirect,url_for,render_template
+from flask import Flask 
+
+
 app = Flask(__name__)
 
-@app.route('/')
+@app.route("/")
 def welcome():
-    return render_template('index.html')
+    return "Welcome to my page" 
+
+@app.route("/success/<score>")
+def success(score):
+    return "You have passed and you score is " + score
 
 
-
-
-
-
-
-
-
-
-
-if __name__ == '__main__':
+if __name__ == "__main__" :
     app.run(debug=True)
